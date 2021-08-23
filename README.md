@@ -3,7 +3,7 @@ A GitHub Action for mirroring your commits to a different remote repository
 
 This project is [mirrored on GitLab](https://gitlab.com/nhsllc/mirror-action)
 
-## Example workflows
+## Example workflow
 
 ### Mirror a repository with username/password over HTTPS
 
