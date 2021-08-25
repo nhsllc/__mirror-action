@@ -1,9 +1,12 @@
 name: mirror-repo
 
-on: [merge]
+on: 
+  pull_request:
+    types: [closed]
 jobs: 
   build:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
       - uses: actions/checkout@v1
       - name: mirror-repository
