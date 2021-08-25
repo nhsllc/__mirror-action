@@ -1,5 +1,4 @@
 name: mirror-repo
-
 on: 
   pull_request:
     types: [closed]
