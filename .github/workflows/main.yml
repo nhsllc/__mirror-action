@@ -1,5 +1,4 @@
 name: mirror-repo
-
 on: [push]
 jobs: 
   build:
