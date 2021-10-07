@@ -6,7 +6,7 @@ if [[ "${DEBUG}" -eq "true" ]]; then
 fi
 
 GIT_USERNAME=${INPUT_GIT_USERNAME:-${GIT_USERNAME:-"git"}}
-REMOTE="https://gitlab.com/nhsllc/${INPUT_REMOTE:-"$*"}
+REMOTE="https://gitlab.com/${INPUT_REMOTE:-"$*"}.git
 GIT_SSH_PRIVATE_KEY=${INPUT_GIT_SSH_PRIVATE_KEY}
 GIT_SSH_PUBLIC_KEY=${INPUT_GIT_SSH_PUBLIC_KEY}
 GIT_PUSH_ARGS=${INPUT_GIT_PUSH_ARGS:-"--tags --force --mirror"}
