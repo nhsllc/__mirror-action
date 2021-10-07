@@ -14,4 +14,5 @@ LABEL "maintainer"="Benjamin L. Miles <bmiles@nethealthshops.com>"
 
 COPY entrypoint.sh /entrypoint.sh
 COPY cred-helper.sh /cred-helper.sh
+RUN chmod +x docker-entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
