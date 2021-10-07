@@ -21,7 +21,7 @@ on: [push]
             GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
 ```
 
-Be sure to set the `GIT_PASSWORD` secret in your repo secrets settings.
+Be sure to set the `GIT_PASSWORD` secret in your organization secrets settings.
 
 
 **NOTE:** by default, all branches are pushed. If you want to avoid 
@@ -51,7 +51,7 @@ Pretty much the same, but using `GIT_SSH_PRIVATE_KEY` and `GIT_SSH_KNOWN_HOSTS`
 
 `GIT_SSH_KNOWN_HOSTS` is expected to be the contents of a `known_hosts` file.
 
-Be sure you set the secrets in your repo secrets settings!
+Be sure you set the secrets in your organization secrets settings!
 
 **NOTE:** if you prefer to skip hosts verification instead of providing a known_hosts file, 
 you can do so by using the `GIT_SSH_NO_VERIFY_HOST` input option. e.g.
