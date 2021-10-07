@@ -1,4 +1,4 @@
-name: mirror-repo on PUSH
+name: mirror-repo-push
 on: [push]
 jobs: 
   build:

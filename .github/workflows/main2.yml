@@ -1,4 +1,4 @@
-name: mirror-repo on MERGE
+name: mirror-repo-merge
 on: 
   pull_request:
     types: [closed]
