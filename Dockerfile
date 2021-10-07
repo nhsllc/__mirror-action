@@ -14,4 +14,4 @@ LABEL "maintainer"="Benjamin L. Miles <bmiles@nethealthshops.com>"
 
 COPY entrypoint.sh /entrypoint.sh
 COPY cred-helper.sh /cred-helper.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sudo /entrypoint.sh"]
