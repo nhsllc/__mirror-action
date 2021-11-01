@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: mirror-repository
-      uses: nhsllc/mirror-action@v0.4.0
+      uses: nhsllc/mirror-action@dev
       with:
         REMOTE: git@gitlab.com:nhsllc/mirror-action.git
         GIT_SSH_PRIVATE_KEY: ${{ secrets.GIT_SSH_KEY }}
