@@ -22,8 +22,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v1
-    - name: mirror-repository
     - uses: nhsllc/mirror-action/Dockerfile
+    - name: mirror-repository
     - uses:  nhsllc/mirror-action@dev     
       with:
         REMOTE: ${{ secrets.GITLAB_REMOTE_ORG_PATH }}${{ github.event.repository.name }}.git 
