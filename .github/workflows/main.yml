@@ -23,7 +23,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: mirror-repository
-      uses:  nhsllc/mirror-action
+    - uses: nhsllc/mirror-action/Dockerfile
+    - uses:  nhsllc/mirror-action@dev     
       with:
         REMOTE: ${{ secrets.GITLAB_REMOTE_ORG_PATH }}${{ github.event.repository.name }}.git 
         GIT_SSH_PRIVATE_KEY: ${{ secrets.GIT_SSH_KEY }}
