@@ -7,10 +7,10 @@ jobs:
     - name: Get private repo with action
       uses: actions/checkout@v2
       with:
-        repository: yourorg/privateactionrepo
+        repository: nhsllc/mirror-action@prod
         ref: master
-        token: ${{ secrets.PAT_TOKEN }}
-        path: .github/actions 
+        token: ${{ secrets.TEST_GITHUB_PAT }}
+        path: .github/actions/.
   build:
     runs-on: ubuntu-latest
     steps:
