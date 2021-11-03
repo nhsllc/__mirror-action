@@ -9,10 +9,10 @@ LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="https://github.com/nhsllc/mirror-action"
 LABEL "homepage"="https://github.com/nhsllc/mirror-action"
-LABEL "maintainer"="Benjamin L. Miles <bmiles@nethealthshops.com>"
+LABEL "maintainer"="Benjamin Lloyd Miles <bmiles@nethealthshops.com>"
 
 
 COPY entrypoint.sh /entrypoint.sh
 COPY cred-helper.sh /cred-helper.sh
-RUN chmod +x docker-entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
