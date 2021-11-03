@@ -18,4 +18,4 @@ jobs:
             GIT_SSH_PRIVATE_KEY: ${{ secrets.GIT_SSH_PRIVATE_KEY }}
             GIT_SSH_NO_VERIFY_HOST: "true"
             REMOTE: ${{ secrets.GITLAB_REMOTE_ORG_PATH }}${{ github.event.repository.name }}.git
-            DEBUG: "true"
+            DEBUG: "false"
