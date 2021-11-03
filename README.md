@@ -38,6 +38,7 @@ Requires version 0.4.0+
 
 Pretty much the same, but using `GIT_SSH_PRIVATE_KEY` and `GIT_SSH_KNOWN_HOSTS`
 
+
 ```yaml
       steps:
         - uses: actions/checkout@v1
